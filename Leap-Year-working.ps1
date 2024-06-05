@@ -9,7 +9,7 @@ function get-leap-year {
             return $false
         }
     }
-    $year = Read-Host "geeft een jaartal in van 1 tot en met 3999."
+    $year = Read-Host "Geeft een jaartal in."
     $leap = get-leap-year -year $year
     if ($leap) {
         Write-Output "Het jaar $year is een schrikkeljaar."
